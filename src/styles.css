@@ -1,0 +1,45 @@
+:root {
+    --color-text: #111c24;
+    --blue: #3f51b5;
+}
+body {
+  background-color: #fff;
+  color: var(--color-text);
+  max-width: 100%;
+  min-width: 320px;
+}
+a, button {
+  cursor: pointer;
+}
+input[type=text] {
+  margin: 0 10px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px 0;
+  width: 90%;
+}
+.btn {
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 3px;
+  color: var(--blue);
+  padding: 5px 10px;
+}
+.btn:not([disabled]):hover {
+  opacity: 0.8;
+}
+.btn:disabled {
+  filter: grayscale(0.7);
+}
+.btn--filled {
+  background-color: var(--blue);
+  color: #fff;
+}
+.btn--filled.focus, .btn--filled:focus, .btn--filled:hover {
+  color: #fff;
+}
+.input-wrap {
+  margin: 10px 0;
+}

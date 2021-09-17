@@ -1,0 +1,6 @@
+<div class="input-wrap">
+  <label for="userName">User Name: </label>
+  <input type="text" id="userName" name="userName" [(ngModel)]="userName">
+</div>
+<p>{{userName}}</p>
+<button type="button" class="btn btn--filled" [disabled]='!userName' (click)="resetUserName()">Reset user name</button>
